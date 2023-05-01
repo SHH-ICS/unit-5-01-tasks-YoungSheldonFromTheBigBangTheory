@@ -8,7 +8,14 @@ while True:
     a = random.randint(1, 100)
     b = random.randint(1, 100)
 
-    y = input(str(a) + "+" + str(b) + "= ")
+    while True:
+        y = input(str(a) + "+" + str(b) + "= ")
+        try:
+            y = int(y)
+        except ValueError:
+            print("Invalid. Not a number.")
+            continue
+        break
 
     if int(y) == int(a+b):
         print("Correct")
