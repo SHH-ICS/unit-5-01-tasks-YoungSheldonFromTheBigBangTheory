@@ -16,6 +16,10 @@ while True:
         print("Incorrect")
 
     p = input("Play again. y/n: ")
+    while p != "y" and p != "n":
+        print("\nInvalid. Play again. y/n: \n")
+        p = input("Play again. y/n: ")
+
     if p == "n":
+        print("\nThanks for playing!\n")
         break
-    
