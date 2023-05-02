@@ -17,7 +17,6 @@ while True:
         print("\nInvalid input.\n")
         continue
 
-
     a2 = min(a, b)
     b2 = max(a, b)
 
