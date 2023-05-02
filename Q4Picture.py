@@ -17,6 +17,7 @@ while True:
     # Code to render stuff
     pygame.draw.circle(Display, (255,0,0), (250, 200), 50)
     pygame.draw.line(Display, (0, 0, 255), (250, 0), (250, 500))
+    pygame.draw.line(Display, (0, 0, 255), (0, 250), (500, 250))
   
     pygame.display.flip()
     Clock.tick(FPS)
